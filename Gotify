@@ -12,7 +12,7 @@ services:
       - "./gotify_data:/app/data" 
     restart: unless-stopped
     networks:
-      - nginx_default
+      - nginx_default #choose your reverse proxy network
 networks:
-  nginx_default:
+  nginx_default: #change this to your reverse proxy
     external: true
