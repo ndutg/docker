@@ -21,7 +21,7 @@ services:
 # uncomment the ports if you are not using traefik labels
 #   ports:
  #     - 8050:8443 
-# if you are not using traefik then feel free to ignore it
+# if you are not using traefik then feel free to remove or comment the labels below
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.code-server.entrypoints=http"
