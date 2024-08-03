@@ -1,0 +1,12 @@
+#HOW TO ADD DOCKER ON CODE-SERVER
+If you've already mounted the docker sock, you just need to exec into the code-server container;
+
+docker exec -it code-server /bin/bash
+
+and install the Docker CLI;
+
+apt-get update
+apt-get install -y docker.io
+then install the Docker extension and it will work.
+
+Note: The Docker CLI will not persist between container restarts. For that you could roll your own or use the LinuxServer.io image with the DOCKER_MODS: "linuxserver/mods:universal-docker" env var set.
